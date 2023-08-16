@@ -1,0 +1,138 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    --first-color: #b4adea;
+    --second-color: #50514f;
+    --third-color: #fdfff7;
+    --green-color: #59ffa0;
+    --yellow-color: #ffed65;
+}
+#navbar {
+    width: 100vw;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: end;
+    height: 5rem;
+    background-color: var(--first-color);
+    position: fixed;
+    top: 0;
+}
+#navbar a {
+    height: 100%;
+    width: 5rem;
+    padding: auto 1rem;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+}
+#navbar a:hover {
+    border: 1px solid black;
+    background-color: var(--green-color);
+    color: black;
+}
+#welcome-section {
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--second-color);
+    color: white;
+    padding-top: 6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#welcome-section h1 {
+    margin: 1rem 0;
+    font-size: 3rem;
+}
+#welcome-section p {
+    margin: 1rem 0;
+    font-size: 1.5rem;
+}
+#projects {
+    background-color: var(--third-color);
+    color: black;
+    padding: 6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#projects h2 {
+    font-size: 2rem;
+    margin: 1rem;
+}
+.projects-cont {
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.project-tile {
+    margin: 3rem 0;
+}
+iframe {
+    width: 80vw;
+    height: 30vh;
+}
+.project-tile h3 {
+    background-color: var(--green-color);
+    text-align: center;
+    color: black;
+    padding: 1rem 0;
+    font-size: 1.5rem;
+}
+.project-tile a {
+    text-decoration: none;
+    color: black;
+}
+#contact {
+    padding-top: 6rem;
+    height: calc(100vh - 6rem);
+    background-color: var(--second-color);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#contact h2 {
+    font-size: 2rem;
+    margin: 1rem;
+}
+#contact p {
+    font-size: 1rem;
+    margin: 0.5rem;
+    font-style: italic;
+}
+.contact-cont {
+    padding: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.contact-cont a {
+    color: var(--yellow-color);
+    margin: 1rem;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+footer {
+    width: 100vw;
+    height: 3rem;
+    padding: 0 1rem;
+    background-color: var(--second-color);
+    color: white;
+    border-top: 5px solid var(--first-color);
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+@media (max-width: 600px) {
+    iframe {
+        width: 80vw;
+        height: 50vh;
+    }
+}
